@@ -567,7 +567,7 @@
     "__docId__": 48,
     "kind": "file",
     "name": "src/app.js",
-    "content": "var Settings = require('./settings.js')\n\n/**\n * This is the init constructor for this module.\n * \n * @param {any} settings settings dictionary.\n */\nclass init {\n    constructor(settings) {\n        this.settings = new Settings(settings)\n    }\n}\n\nmodule.exports = init",
+    "content": "var Settings = require('./settings.js')\n\n/**\n * This is the init class of this module.\n * \n * @class init\n */\nclass Init {\n    /**\n     * This is the init constructor for this module.\n     * \n     * @param {any} settings settings dictionary.\n     */\n    constructor(settings) {\n        this.settings = new Settings(settings)\n    }\n}\n\nmodule.exports = Init",
     "static": true,
     "longname": "/home/pedro/Documentos/quorama/quorama-server-module-artifact/src/app.js",
     "access": "public",
@@ -598,16 +598,36 @@
   {
     "__docId__": 50,
     "kind": "class",
-    "name": "init",
+    "name": "Init",
     "memberof": "src/app.js",
     "static": true,
-    "longname": "src/app.js~init",
+    "longname": "src/app.js~Init",
     "access": "public",
-    "export": false,
+    "export": true,
     "importPath": "quorama-server-module-artifact",
-    "importStyle": null,
-    "description": "This is the init constructor for this module.",
+    "importStyle": "Init",
+    "description": "This is the init class of this module.",
     "lineNumber": 8,
+    "unknown": [
+      {
+        "tagName": "@class",
+        "tagValue": "init"
+      }
+    ],
+    "interface": false
+  },
+  {
+    "__docId__": 51,
+    "kind": "constructor",
+    "name": "constructor",
+    "memberof": "src/app.js~Init",
+    "generator": false,
+    "async": false,
+    "static": false,
+    "longname": "src/app.js~Init#constructor",
+    "access": "public",
+    "description": "This is the init constructor for this module.",
+    "lineNumber": 14,
     "params": [
       {
         "nullable": null,
@@ -619,34 +639,18 @@
         "name": "settings",
         "description": "settings dictionary."
       }
-    ],
-    "interface": false,
-    "ignore": true
-  },
-  {
-    "__docId__": 51,
-    "kind": "constructor",
-    "name": "constructor",
-    "memberof": "src/app.js~init",
-    "generator": false,
-    "async": false,
-    "static": false,
-    "longname": "src/app.js~init#constructor",
-    "access": "public",
-    "description": null,
-    "lineNumber": 9,
-    "undocument": true
+    ]
   },
   {
     "__docId__": 52,
     "kind": "member",
     "name": "settings",
-    "memberof": "src/app.js~init",
+    "memberof": "src/app.js~Init",
     "static": false,
-    "longname": "src/app.js~init#settings",
+    "longname": "src/app.js~Init#settings",
     "access": "public",
     "description": null,
-    "lineNumber": 10,
+    "lineNumber": 15,
     "undocument": true,
     "type": {
       "types": [
@@ -673,14 +677,13 @@
     "static": true,
     "longname": "src/artifact.js~Artifact",
     "access": "public",
-    "export": false,
+    "export": true,
     "importPath": "quorama-server-module-artifact/src/artifact.js",
-    "importStyle": null,
+    "importStyle": "Artifact",
     "description": null,
     "lineNumber": 1,
     "undocument": true,
-    "interface": false,
-    "ignore": true
+    "interface": false
   },
   {
     "__docId__": 55,
@@ -812,14 +815,13 @@
     "static": true,
     "longname": "src/artifactfactory.js~ArtifactFactory",
     "access": "public",
-    "export": false,
+    "export": true,
     "importPath": "quorama-server-module-artifact/src/artifactfactory.js",
-    "importStyle": null,
+    "importStyle": "ArtifactFactory",
     "description": null,
     "lineNumber": 5,
     "undocument": true,
-    "interface": false,
-    "ignore": true
+    "interface": false
   },
   {
     "__docId__": 63,
@@ -915,9 +917,9 @@
     "static": true,
     "longname": "src/settings.js~Settings",
     "access": "public",
-    "export": false,
+    "export": true,
     "importPath": "quorama-server-module-artifact/src/settings.js",
-    "importStyle": null,
+    "importStyle": "Settings",
     "description": null,
     "lineNumber": 5,
     "undocument": true,
@@ -929,12 +931,11 @@
         ]
       }
     ],
-    "return": null,
-    "ignore": true
+    "return": null
   },
   {
     "kind": "index",
-    "content": "# quorama-server-module-artifact\nA module that enables Quoarama Server to handle Artifacts. It has responsibility of abstract the business logic of an Artifact and at the same time store them out.\n\n## Installation\n\nTODO.\n\n\n## Module configuration JSON example\n\n~~~\n{\n    \"mongodb_url\": \"mongodb://localhost:27017/\"\n}\n~~~\n\n## Instantiation\n\n~~~\nvar settings = require('./module-settings.json')\nvar QuoramaServerModuleArtifact = require('quorama-server-module-artifact')\nQuoramaServerModuleArtifact(settings);\n~~~\n\n## API\n\nCheck out the /docs folder for full API documentation.",
+    "content": "# quorama-server-module-artifact\nA module that enables Quoarama Server to handle Artifacts. It has responsibility of abstract the business logic of an Artifact and at the same time store them out.\n\n## Installation instructions\n\nTODO.\n\n\n## Settings object for module configuration\n\n~~~\n{\n    \"mongodb_url\": \"mongodb://localhost:27017/\"\n}\n~~~\n\n## Instantiation\n\n~~~\nvar settings = require('./module-settings.json')\nvar QuoramaServerModuleArtifact = require('quorama-server-module-artifact')\nQuoramaServerModuleArtifact(settings);\n~~~\n\n## API\n\nCheck out the /docs folder for full API documentation.",
     "longname": "/home/pedro/Documentos/quorama/quorama-server-module-artifact/README.md",
     "name": "./README.md",
     "static": true,
@@ -942,7 +943,7 @@
   },
   {
     "kind": "packageJSON",
-    "content": "{\n  \"name\": \"quorama-server-module-artifact\",\n  \"version\": \"1.0.0\",\n  \"description\": \" A module that enables Quoarama Server to handle Artifacts. It has responsability of abstract the business logic of an Artifact and at the same time store them out.\",\n  \"main\": \"./src/app.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/quorama/quorama-server-module-artifact.git\"\n  },\n  \"author\": \"pdefreitas\",\n  \"license\": \"AGPL-3.0\",\n  \"bugs\": {\n    \"url\": \"https://github.com/quorama/quorama-server-module-artifact/issues\"\n  },\n  \"homepage\": \"https://github.com/quorama/quorama-server-module-artifact#readme\",\n  \"dependencies\": {\n    \"mongodb\": \"^2.2.33\"\n  },\n  \"devDependencies\": {\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-standard-plugin\": \"^1.0.0\"\n  },\n  \"esdoc\": {\n    \"source\": \"./src\",\n    \"destination\": \"./docs\",\n    \"plugins\": [\n      {\"name\": \"esdoc-standard-plugin\"}\n    ]\n  }\n}\n",
+    "content": "{\n  \"name\": \"quorama-server-module-artifact\",\n  \"version\": \"1.0.0\",\n  \"description\": \" A module that enables Quoarama Server to handle Artifacts. It has responsability of abstract the business logic of an Artifact and at the same time store them out.\",\n  \"main\": \"./src/app.js\",\n  \"scripts\": {\n    \"test\": \"echo \\\"Error: no test specified\\\" && exit 1\"\n  },\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/quorama/quorama-server-module-artifact.git\"\n  },\n  \"author\": \"pdefreitas\",\n  \"license\": \"AGPL-3.0\",\n  \"bugs\": {\n    \"url\": \"https://github.com/quorama/quorama-server-module-artifact/issues\"\n  },\n  \"homepage\": \"https://github.com/quorama/quorama-server-module-artifact#readme\",\n  \"dependencies\": {\n    \"mongodb\": \"^2.2.33\"\n  },\n  \"devDependencies\": {\n    \"esdoc\": \"^1.0.4\",\n    \"esdoc-node\": \"^1.0.2\",\n    \"esdoc-standard-plugin\": \"^1.0.0\"\n  },\n  \"esdoc\": {\n    \"source\": \"./src\",\n    \"destination\": \"./docs\",\n    \"plugins\": [\n      {\n        \"name\": \"esdoc-standard-plugin\"\n      },\n      {\n        \"name\": \"esdoc-node\"\n      }\n    ]\n  }\n}\n",
     "longname": "/home/pedro/Documentos/quorama/quorama-server-module-artifact/package.json",
     "name": "package.json",
     "static": true,

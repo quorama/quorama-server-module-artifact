@@ -1,15 +1,14 @@
 {
-  "coverage": "5.88%",
+  "coverage": "11.76%",
   "expectCount": 17,
-  "actualCount": 1,
+  "actualCount": 2,
   "files": {
     "src/app.js": {
       "expectCount": 4,
-      "actualCount": 1,
+      "actualCount": 2,
       "undocumentLines": [
         1,
-        9,
-        10
+        15
       ]
     },
     "src/artifact.js": {

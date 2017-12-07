@@ -1,5 +1,29 @@
 window.esdocSearchIndex = [
   [
+    "quorama-server-module-artifact/src/artifact.js~artifact",
+    "class/src/artifact.js~Artifact.html",
+    "<span>Artifact</span> <span class=\"search-result-import-path\">quorama-server-module-artifact/src/artifact.js</span>",
+    "class"
+  ],
+  [
+    "quorama-server-module-artifact/src/artifactfactory.js~artifactfactory",
+    "class/src/artifactfactory.js~ArtifactFactory.html",
+    "<span>ArtifactFactory</span> <span class=\"search-result-import-path\">quorama-server-module-artifact/src/artifactfactory.js</span>",
+    "class"
+  ],
+  [
+    "quorama-server-module-artifact~init",
+    "class/src/app.js~Init.html",
+    "<span>Init</span> <span class=\"search-result-import-path\">quorama-server-module-artifact</span>",
+    "class"
+  ],
+  [
+    "quorama-server-module-artifact/src/settings.js~settings",
+    "function/index.html#static-function-Settings",
+    "<span>Settings</span> <span class=\"search-result-import-path\">quorama-server-module-artifact/src/settings.js</span>",
+    "function"
+  ],
+  [
     "src/.external-ecmascript.js~array",
     "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "src/.external-ecmascript.js~Array",
@@ -288,16 +312,58 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/app.js~init#constructor",
+    "class/src/app.js~Init.html#instance-constructor-constructor",
+    "src/app.js~Init#constructor",
+    "method"
+  ],
+  [
+    "src/app.js~init#settings",
+    "class/src/app.js~Init.html#instance-member-settings",
+    "src/app.js~Init#settings",
+    "member"
+  ],
+  [
     "src/artifact.js",
     "file/src/artifact.js.html",
     "src/artifact.js",
     "file"
   ],
   [
+    "src/artifact.js~artifact#constructor",
+    "class/src/artifact.js~Artifact.html#instance-constructor-constructor",
+    "src/artifact.js~Artifact#constructor",
+    "method"
+  ],
+  [
+    "src/artifact.js~artifact#filename",
+    "class/src/artifact.js~Artifact.html#instance-member-filename",
+    "src/artifact.js~Artifact#filename",
+    "member"
+  ],
+  [
+    "src/artifact.js~artifact#path",
+    "class/src/artifact.js~Artifact.html#instance-member-path",
+    "src/artifact.js~Artifact#path",
+    "member"
+  ],
+  [
     "src/artifactfactory.js",
     "file/src/artifactfactory.js.html",
     "src/artifactfactory.js",
     "file"
+  ],
+  [
+    "src/artifactfactory.js~artifactfactory#constructor",
+    "class/src/artifactfactory.js~ArtifactFactory.html#instance-constructor-constructor",
+    "src/artifactfactory.js~ArtifactFactory#constructor",
+    "method"
+  ],
+  [
+    "src/artifactfactory.js~artifactfactory#settings",
+    "class/src/artifactfactory.js~ArtifactFactory.html#instance-member-settings",
+    "src/artifactfactory.js~ArtifactFactory#settings",
+    "member"
   ],
   [
     "src/settings.js",
