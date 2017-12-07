@@ -2,7 +2,7 @@
   "name": "quorama-server-module-artifact",
   "version": "1.0.0",
   "description": " A module that enables Quoarama Server to handle Artifacts. It has responsability of abstract the business logic of an Artifact and at the same time store them out.",
-  "main": "index.js",
+  "main": "./src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,19 @@
   "bugs": {
     "url": "https://github.com/quorama/quorama-server-module-artifact/issues"
   },
-  "homepage": "https://github.com/quorama/quorama-server-module-artifact#readme"
+  "homepage": "https://github.com/quorama/quorama-server-module-artifact#readme",
+  "dependencies": {
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "esdoc": "^1.0.4",
+    "esdoc-standard-plugin": "^1.0.0"
+  },
+  "esdoc": {
+    "source": "./src",
+    "destination": "./docs",
+    "plugins": [
+      {"name": "esdoc-standard-plugin"}
+    ]
+  }
 }
